@@ -7,7 +7,7 @@ var missingNumber = function (nums) {
     let othersum = 0;
     for (let i = 0; i < nums.length; i++) {
         sum += nums[i]
-        othersum += (nums.length - i)
+        // othersum += (nums.length - i)
     }
-    return othersum - sum
+    return nums.length*(nums.length+1)/2 - sum
 };
