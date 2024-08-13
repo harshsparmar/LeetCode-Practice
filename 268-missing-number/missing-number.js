@@ -5,9 +5,10 @@
 var missingNumber = function (nums) {
     let sum = 0;
     let othersum = 0;
-    for (let i = 0; i < nums.length; i++) {
+    let n = nums.length;
+    for (let i = 0; i < n; i++) {
         sum += nums[i]
-        othersum += (nums.length - i)
+        othersum += n - i
     }
     // return nums.length*(nums.length+1)/2 - sum
     return othersum - sum
